@@ -1,0 +1,31 @@
+<h1>Homework 3</h1>
+<h2> Cats Table </h2>
+<table border="1">
+  <tr><th>Name</th>
+    <tr>
+      <% @cats.each do |cat| %>
+      <td><%= cat.name %></td>
+    </tr>
+    <% end %>
+</table>
+<h2>Users Table</th></h2>
+<table border="1">  
+  <tr><th>Username</th><th>Email</th><th>Age</th></tr>
+    <tr>
+      <% @users.each do |user| %>
+      <td><%= user.username %></td>
+      <td><%= user.email %></td>
+      <td><%= user.age %></td>
+    </tr>
+    <% end %>
+</table>
+<h2>To-do List</h2>
+<table border="1">
+  <tr><th>Task</th><th>Finished</th></tr>
+    <tr>
+      <% @todos.each do |todo| %>
+      <td><%= todo.tasks %></td>
+      <td><%= todo.finished %></td>
+    </tr>
+    <% end %>
+</table>
